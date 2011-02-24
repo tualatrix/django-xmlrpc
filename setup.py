@@ -2,7 +2,7 @@ import os
 from setuptools import setup, find_packages
 
 setup(name = 'django-xmlrpc',
-      version = '0.1.3',
+      version = __import__('django_xmlrpc').__version__,
       
       description = 'XML-RPC Server App for the Django framework.',
       long_description=open(os.path.join('README.rst')).read(),
